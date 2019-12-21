@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/labstack/echo"
-	"lin9.me/app/qrcode"
+	"2oo/app/qrcode"
 )
 
 func QRCodeControllerGET(c echo.Context) error {

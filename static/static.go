@@ -3,7 +3,7 @@ package static
 import (
 	"fmt"
 
-	"lin9.me/config"
+	"2oo/config"
 )
 
 func Init(static_dir string) string {

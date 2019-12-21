@@ -3,8 +3,8 @@ package migrations
 import (
 	"log"
 
-	"lin9.me/db"
-	"lin9.me/models"
+	"2oo/db"
+	"2oo/models"
 )
 
 // Migrate is the function for make migration for debugging

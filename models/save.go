@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/jinzhu/gorm"
-	"lin9.me/db"
+	"2oo/db"
 )
 
 type LinkSave struct {

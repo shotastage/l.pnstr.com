@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"lin9.me/config"
-	"lin9.me/controllers"
+	"2oo/config"
+	"2oo/controllers"
 
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"

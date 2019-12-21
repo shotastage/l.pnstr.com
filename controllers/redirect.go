@@ -5,7 +5,7 @@ import (
 
 	"github.com/labstack/echo"
 	"github.com/rs/xid"
-	"lin9.me/models"
+	"2oo/models"
 )
 
 func LinkRedirectController(c echo.Context) error {

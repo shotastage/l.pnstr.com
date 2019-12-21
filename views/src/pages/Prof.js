@@ -183,7 +183,7 @@ class Profile extends React.Component {
           </Row>
           <MarginSparcer/>
           <Row>
-            <p>SFC16 | RG NECO Bhaaとか http://lin9.me とか http://tipstock.net 作ってます</p>
+            <p>SFC16 | RG NECO Bhaaとか http://2oo とか http://tipstock.net 作ってます</p>
           </Row>
           <Row>
             <ProfList type="web" desc="Main official web site.">https://shotastage.xyz</ProfList>

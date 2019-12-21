@@ -3,7 +3,7 @@ settings:
     force: false
     interval: 0s
 schema:
-- name: lin9.me
+- name: 2oo
   path: .
   commands:
     run:

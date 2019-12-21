@@ -6,10 +6,10 @@ import (
 
 	"github.com/labstack/echo"
 	"github.com/rs/xid"
-	"lin9.me/app/lin9shortID"
-	"lin9.me/app/scraper"
-	"lin9.me/interfaces"
-	"lin9.me/models"
+	"2oo/app/lin9shortID"
+	"2oo/app/scraper"
+	"2oo/interfaces"
+	"2oo/models"
 )
 
 type ShortenResponse struct {

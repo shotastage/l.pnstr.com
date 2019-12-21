@@ -1,4 +1,4 @@
-module lin9.me
+module 2oo
 
 go 1.13.3
 

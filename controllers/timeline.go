@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo"
-	"lin9.me/models"
+	"2oo/models"
 )
 
 func ShareLinkTimelineController(c echo.Context) error {

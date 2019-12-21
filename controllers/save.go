@@ -5,10 +5,10 @@ import (
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/labstack/echo"
-	"lin9.me/app/flake"
-	"lin9.me/config"
-	"lin9.me/interfaces"
-	"lin9.me/models"
+	"2oo/app/flake"
+	"2oo/config"
+	"2oo/interfaces"
+	"2oo/models"
 )
 
 func LinkSaveController(c echo.Context) error {

@@ -1,1 +1,1 @@
-web: bin/lin9.me
+web: bin/2oo

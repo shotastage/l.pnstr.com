@@ -6,7 +6,7 @@ import (
 
 	"github.com/jinzhu/gorm"
 	"github.com/lib/pq"
-	"lin9.me/config"
+	"2oo/config"
 )
 
 var db *gorm.DB

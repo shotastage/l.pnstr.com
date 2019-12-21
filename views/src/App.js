@@ -15,7 +15,7 @@ import { withTranslation } from 'react-i18next';
 import { APIClient } from './services/APIClient';
 import { Validator, ValidationType } from './services/Validator';
 
-// lin9.me deprecation warning
+// 2oo deprecation warning
 import { Container, Row } from './components/Grid';
 import MigrationNotice from './AppComponent';
 
@@ -137,12 +137,12 @@ class App extends React.Component {
     const { t } = this.props;
 
 
-    // lin9.me deprecation warning
-    if (window.location.hostname.match("lin9.me"))
+    // 2oo deprecation warning
+    if (window.location.hostname.match("2oo"))
       return (
         <>
           <Navigation>
-            <NavBrand>lin9.me => 2ooU!</NavBrand>
+            <NavBrand>2oo => 2ooU!</NavBrand>
           </Navigation>
           <Container>
             <Row>

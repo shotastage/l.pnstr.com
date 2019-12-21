@@ -1,8 +1,8 @@
 package auth
 
 import (
-	"lin9.me/app/flake"
-	"lin9.me/models"
+	"2oo/app/flake"
+	"2oo/models"
 )
 
 func createSession(identification string, ip string, da string, ua string) string {

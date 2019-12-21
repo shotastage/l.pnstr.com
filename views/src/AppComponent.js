@@ -29,7 +29,7 @@ export const VacantMessage = styled.h1`
 
 
 
-// lin9.me deprecation warning
+// 2oo deprecation warning
 const RedirectNotification = styled.div`
   width: 80%;
   min-height: 200px;
@@ -89,7 +89,7 @@ class MigrationNotice extends React.Component {
             {t('Notice.2')}<strong>{t('Notice.2S')}</strong>{t('Notice.3')}
           </p>
           <p>
-            {t('Notice.ex')}  https://lin9.me/Ojk0I → https://2oo.pw/Ojk0I
+            {t('Notice.ex')}  https://2oo/Ojk0I → https://2oo.pw/Ojk0I
           </p>
           <RNRow>
             <Button onClick={() => { window.location.href = "https://2oo.pw";}}>{t('Notice.Go')}</Button>

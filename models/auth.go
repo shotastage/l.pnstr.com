@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	"github.com/jinzhu/gorm"
-	"lin9.me/db"
+	"2oo/db"
 )
 
 // User is model type

@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
-	"lin9.me/config"
-	"lin9.me/models"
+	"2oo/config"
+	"2oo/models"
 )
 
 func GetJWT(username string, password string, ua string, da string, ip string) (string, error) {

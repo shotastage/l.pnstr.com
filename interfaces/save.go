@@ -1,6 +1,6 @@
 package interfaces
 
-import "lin9.me/models"
+import "2oo/models"
 
 
 type LinkSaveRequest struct {

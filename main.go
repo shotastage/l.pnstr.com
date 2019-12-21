@@ -10,9 +10,9 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"github.com/labstack/echo"
 
-	"lin9.me/config"
-	"lin9.me/db"
-	"lin9.me/db/migrations"
+	"2oo/config"
+	"2oo/db"
+	"2oo/db/migrations"
 )
 
 type Template struct {
