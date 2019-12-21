@@ -1,0 +1,17 @@
+{
+    "database": {
+        "host": "localhost",
+        "port": "5432",
+        "name": "lin9_devel",
+        "user": "shotastage",
+        "password": "",
+        "ssl": "false"
+    },
+    "static": {
+        "directory": "static_files"
+    },
+    "jwt_config": {},
+    "host": "localhost",
+    "port": "8080",
+    "ssl": "false"
+}

@@ -1,0 +1,13 @@
+{
+    "Top": {
+        "Message": "リンクを作成してシェアしよう",
+        "Button": "作成"
+    },
+    "Card": {
+        "InitMessage": "リンクを短縮しよう!"
+    },
+    "Error": {
+        "EmptyURL": "URLが空です.",
+        "InvalidURL": "不正なURLです. httpもしくはhttpsから始まるURLを指定してください."
+    }
+}

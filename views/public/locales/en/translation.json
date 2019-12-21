@@ -1,0 +1,18 @@
+{
+    "Top": {
+        "Message": "Create and share short links",
+        "Button": "Shorten"
+    },
+    "Card": {
+        "InitMessage": "Let's shorten your link!"
+    },
+    "Error": {
+        "EmptyURL": "Empty URL!",
+        "InvalidURL": "Invalid URL! Specify a URL starting with http or https."
+    },
+    "Profile": {
+        "Message": {
+            "Description": "Create your own profile link or page!"
+        }
+    }
+}
