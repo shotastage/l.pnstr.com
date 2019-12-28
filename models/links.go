@@ -3,8 +3,8 @@ package models
 import (
 	"errors"
 
-	"github.com/jinzhu/gorm"
 	"2oo/db"
+	"github.com/jinzhu/gorm"
 )
 
 type Link struct {
@@ -19,24 +19,12 @@ type Link struct {
 	Owned          string `gorm:"size:100"`
 }
 
-type Links []Link
-
 func (l *Link) TableName() string {
 	return "lin9_links"
 }
 
 func (l *Link) GetBy(col string, val interface{}) error {
 	err := db.Sess().Where(col+" = ?", val).First(&l)
-
-	if err.RecordNotFound() {
-		return errors.New("the record does not exists")
-	}
-
-	return nil
-}
-
-func (l *Link) GetAll(col string, val interface{}) error {
-	err := db.Sess().Where(col+" = ?", val).Find(&Links{})
 
 	if err.RecordNotFound() {
 		return errors.New("the record does not exists")
