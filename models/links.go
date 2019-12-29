@@ -19,6 +19,10 @@ type Link struct {
 	Owned          string `gorm:"size:100"`
 }
 
+type LinkImpl struct {
+	DB *gorm.DB
+}
+
 func (l *Link) TableName() string {
 	return "lin9_links"
 }
@@ -32,6 +36,8 @@ func (l *Link) GetBy(col string, val interface{}) error {
 
 	return nil
 }
+
+// Get multiple colmun extended ModelImpl
 
 func (l *Link) Create() *gorm.DB {
 

@@ -3,21 +3,14 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/labstack/echo"
 	"2oo/models"
+	"github.com/labstack/echo"
 )
 
-func ShareLinkTimelineController(c echo.Context) error {
+func (m *models.LinkImpl) ShareLinkTimelineController(c echo.Context) error {
+	rows := []models.Link{}
 
-	var l models.Link
+	m.DB.Limit(5).Find(&rows)
 
-	l.GetAll("private", false)
-
-	for _, elm := range models.Links {
-
-	}
-
-	res := &ShareLinkTimelineResponse{}
-
-	return c.JSON(http.StatusOK, res)
+	return c.JSON(http.StatusOK, &rows)
 }

@@ -1,6 +1,10 @@
 package models
 
-import "time"
+import (
+	"time"
+
+	"github.com/jinzhu/gorm"
+)
 
 var TablePrefix = "lin9_"
 
@@ -18,4 +22,9 @@ type modelError struct {
 
 func (e *modelError) Error() string {
 	return e.message
+}
+
+// ModelImpl is a struct that embedded methods that handling model data using this module.
+type ModelImpl struct {
+	DB *gorm.DB
 }
