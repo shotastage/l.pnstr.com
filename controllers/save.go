@@ -3,12 +3,13 @@ package controllers
 import (
 	"net/http"
 
+	"dnlink/app/flake"
+	"dnlink/config"
+	"dnlink/interfaces"
+	"dnlink/models"
+
 	"github.com/dgrijalva/jwt-go"
 	"github.com/labstack/echo"
-	"2oo/app/flake"
-	"2oo/config"
-	"2oo/interfaces"
-	"2oo/models"
 )
 
 func LinkSaveController(c echo.Context) error {

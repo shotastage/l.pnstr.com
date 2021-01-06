@@ -4,8 +4,9 @@ import (
 	"errors"
 	"fmt"
 
+	"dnlink/db"
+
 	"github.com/jinzhu/gorm"
-	"2oo/db"
 )
 
 type LinkSave struct {

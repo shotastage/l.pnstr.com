@@ -3,7 +3,8 @@ package models
 import (
 	"errors"
 
-	"2oo/db"
+	"dnlink/db"
+
 	"github.com/jinzhu/gorm"
 )
 

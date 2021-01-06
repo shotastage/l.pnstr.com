@@ -3,7 +3,7 @@ package static
 import (
 	"fmt"
 
-	"2oo/config"
+	"dnlink/config"
 )
 
 func Init(static_dir string) string {

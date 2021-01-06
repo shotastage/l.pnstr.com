@@ -3,8 +3,9 @@ package models
 import (
 	"errors"
 
+	"dnlink/db"
+
 	"github.com/jinzhu/gorm"
-	"2oo/db"
 )
 
 type Malicious struct {

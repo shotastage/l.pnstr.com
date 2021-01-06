@@ -1,4 +1,4 @@
-module 2oo
+module dnlink
 
 go 1.16
 

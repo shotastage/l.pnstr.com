@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"2oo/app/qrcode"
+	"dnlink/app/qrcode"
 
 	"github.com/labstack/echo"
 )

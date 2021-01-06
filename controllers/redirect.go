@@ -3,7 +3,7 @@ package controllers
 import (
 	"net/http"
 
-	"2oo/models"
+	"dnlink/models"
 
 	"github.com/labstack/echo"
 	"github.com/rs/xid"

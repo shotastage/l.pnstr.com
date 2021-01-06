@@ -3,8 +3,8 @@ package controllers
 import (
 	"net/http"
 
-	"2oo/interfaces"
-	"2oo/models"
+	"dnlink/interfaces"
+	"dnlink/models"
 
 	"github.com/labstack/echo"
 )

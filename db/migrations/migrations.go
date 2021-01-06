@@ -3,8 +3,8 @@ package migrations
 import (
 	"log"
 
-	"2oo/db"
-	"2oo/models"
+	"dnlink/db"
+	"dnlink/models"
 )
 
 // Migrate is the function for make migration for debugging

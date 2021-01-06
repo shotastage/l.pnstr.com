@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"strings"
 
-	"2oo/app/lin9shortID"
-	"2oo/app/scraper"
-	"2oo/interfaces"
-	"2oo/models"
+	"dnlink/app/lin9shortID"
+	"dnlink/app/scraper"
+	"dnlink/interfaces"
+	"dnlink/models"
 
 	"github.com/labstack/echo"
 	"github.com/rs/xid"

@@ -1,1 +1,1 @@
-web: bin/2oo
+web: bin/dnlink

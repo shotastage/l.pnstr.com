@@ -4,9 +4,10 @@ import (
 	"log"
 	"os"
 
+	"dnlink/config"
+
 	"github.com/jinzhu/gorm"
 	"github.com/lib/pq"
-	"2oo/config"
 )
 
 var db *gorm.DB

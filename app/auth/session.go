@@ -1,8 +1,8 @@
 package auth
 
 import (
-	"2oo/app/flake"
-	"2oo/models"
+	"dnlink/app/flake"
+	"dnlink/models"
 )
 
 func createSession(identification string, ip string, da string, ua string) string {

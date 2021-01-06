@@ -3,7 +3,7 @@ settings:
     force: false
     interval: 0s
 schema:
-- name: 2oo
+- name: dnlink
   path: .
   commands:
     run:

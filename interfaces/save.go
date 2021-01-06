@@ -1,7 +1,6 @@
 package interfaces
 
-import "2oo/models"
-
+import "dnlink/models"
 
 type LinkSaveRequest struct {
 	Link   string `json:"link"`

@@ -4,8 +4,8 @@ import (
 	"errors"
 	"time"
 
-	"2oo/config"
-	"2oo/models"
+	"dnlink/config"
+	"dnlink/models"
 
 	"github.com/dgrijalva/jwt-go"
 )

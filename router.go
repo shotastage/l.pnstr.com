@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"2oo/config"
-	"2oo/controllers"
+	"dnlink/config"
+	"dnlink/controllers"
 
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
