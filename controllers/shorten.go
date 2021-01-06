@@ -56,6 +56,17 @@ func createAndStoreLink(origin string) (string, int) {
 
 	var l models.Link
 
+	// Avoid link9 link duplication
+	if strings.Contains(origin, "link.digital-nichan.com") {
+
+		shortID := strings.Replace(origin, "http://link.digital-nichan.com", "", -0)
+		shortID = strings.Replace(origin, "https://link.digital-nichan.com", "", -0)
+
+		l.GetBy("shorten", shortID)
+
+		return origin, l.ViewCount
+	}
+
 	if l.GetBy("origin", origin) != nil {
 
 		randID := lin9shortID.CreateRondomID()
