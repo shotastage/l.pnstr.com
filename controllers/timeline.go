@@ -1,12 +1,6 @@
 package controllers
 
-import (
-	"net/http"
-
-	"2oo/models"
-	"github.com/labstack/echo"
-)
-
+/*
 func (m *models.LinkImpl) ShareLinkTimelineController(c echo.Context) error {
 
 	rows := []models.Link{}
@@ -15,3 +9,4 @@ func (m *models.LinkImpl) ShareLinkTimelineController(c echo.Context) error {
 
 	return c.JSON(http.StatusOK, &rows)
 }
+*/

@@ -41,7 +41,7 @@ func routerMaker() *echo.Echo {
 	webview := router.Group("/web")
 	{
 		webview.GET("/qr/:shortenID", controllers.QRCodeControllerGET)
-		webview.GET("/latest_link", controllers.ShareLinkTimelineController)
+		//- webview.GET("/latest_link", controllers.ShareLinkTimelineController)
 	}
 
 	// Health Check
