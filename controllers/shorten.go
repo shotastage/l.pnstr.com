@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"fmt"
 	"net/http"
 	"strings"
 
@@ -43,6 +44,11 @@ func CreateNewLinkController(c echo.Context) error {
 	}
 
 	shortenURL, viewCount := createAndStoreLink(r.Origin)
+
+	fmt.Println("@@@@@@@@@@@@@@@@@@@@@@@@@")
+	fmt.Println(shortenURL)
+	fmt.Println(viewCount)
+
 	title, desc, image := scraper.ScrapOgInfo(r.Origin)
 
 	res := &ShortenResponse{
