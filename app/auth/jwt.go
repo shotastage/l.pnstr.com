@@ -4,9 +4,10 @@ import (
 	"errors"
 	"time"
 
-	"github.com/dgrijalva/jwt-go"
 	"2oo/config"
 	"2oo/models"
+
+	"github.com/dgrijalva/jwt-go"
 )
 
 func GetJWT(username string, password string, ua string, da string, ip string) (string, error) {
@@ -41,7 +42,7 @@ func createToken(identification string, email string, sessionToken string) (stri
 		Admin:          true,
 		StandardClaims: jwt.StandardClaims{
 			ExpiresAt: time.Now().Add(time.Hour * 72).Unix(),
-			Issuer:    "https://2oo.pw/auth/login_jwt",
+			Issuer:    "https://link.digital-nichan.com/auth/login_jwt",
 		},
 	}
 

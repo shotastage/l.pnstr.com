@@ -4,12 +4,13 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/labstack/echo"
-	"github.com/rs/xid"
 	"2oo/app/lin9shortID"
 	"2oo/app/scraper"
 	"2oo/interfaces"
 	"2oo/models"
+
+	"github.com/labstack/echo"
+	"github.com/rs/xid"
 )
 
 type ShortenResponse struct {
@@ -54,17 +55,6 @@ func CreateNewLinkController(c echo.Context) error {
 func createAndStoreLink(origin string) (string, int) {
 
 	var l models.Link
-
-	// Avoid link9 link duplication
-	if strings.Contains(origin, "2oo.pw") {
-
-		shortID := strings.Replace(origin, "http://2oo.pw", "", -0)
-		shortID = strings.Replace(origin, "https://2oo.pw", "", -0)
-
-		l.GetBy("shorten", shortID)
-
-		return origin, l.ViewCount
-	}
 
 	if l.GetBy("origin", origin) != nil {
 

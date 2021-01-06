@@ -107,7 +107,7 @@ class App extends React.Component {
         </CardSiteDesctiption>
         <CardControlArea>
           <CopyButton onClick={() => this.saveToClipboard(shorten)}>Copy</CopyButton>
-          <QRImage src={ "https://2oo.pw/web/qr/" + shortenID} onClick={() => this.downloadQR("https://2oo.pw/web/qr/" + shortenID)}/>
+          <QRImage src={ "https://link.digital-nichan.com/web/qr/" + shortenID} onClick={() => this.downloadQR("https://link.digital-nichan.com/web/qr/" + shortenID)}/>
         </CardControlArea>
       </CardCol>
     );
@@ -126,7 +126,7 @@ class App extends React.Component {
         <>
         {
           this.renderCard(item.title, item.description, item.image, item.shorten,
-                                      item.shorten.replace("https://2oo.pw/", ""))
+                                      item.shorten.replace("https://link.digital-nichan.com/", ""))
         }
         </>
       );
@@ -134,29 +134,12 @@ class App extends React.Component {
   }
 
   render() {
-    const { t } = this.props;
-
-
-    // 2oo deprecation warning
-    if (window.location.hostname.match("2oo"))
-      return (
-        <>
-          <Navigation>
-            <NavBrand>lin9.me => 2ooU!</NavBrand>
-          </Navigation>
-          <Container>
-            <Row>
-              <MigrationNotice/>
-            </Row>
-          </Container>
-        </>
-      );
-    
+    const { t } = this.props;    
         
     return (
       <>
         <Navigation>
-          <NavBrand>2ooU!</NavBrand>
+          <NavBrand>DN Link Center</NavBrand>
           <NavArea>
             <NavItems>
               <NavLink to='/m/signin'>Signin</NavLink>

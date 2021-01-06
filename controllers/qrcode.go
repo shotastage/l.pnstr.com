@@ -6,15 +6,16 @@ import (
 	"os"
 	"strings"
 
-	"github.com/labstack/echo"
 	"2oo/app/qrcode"
+
+	"github.com/labstack/echo"
 )
 
 func QRCodeControllerGET(c echo.Context) error {
 
 	urlID := c.Param("shortenID")
 
-	qrlink := "https://2oo.pw/" + urlID
+	qrlink := "https://link.digital-nichan.com/" + urlID
 
 	if strings.Contains(urlID, "WIFI:") {
 		qrlink = urlID

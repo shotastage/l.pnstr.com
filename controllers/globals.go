@@ -1,3 +1,3 @@
 package controllers
 
-var BaseURL = "https://2oo.pw/"
+var BaseURL = "https://link.digital-nichan.com/"
