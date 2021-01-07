@@ -40,7 +40,7 @@ class ProfileManager extends React.Component {
           </Row>
           <MarginSparcer/>
           <Row>
-            <ProfList type="web" desc="Main official web site.">https://shotastage.xyz</ProfList>
+            <ProfList type="web" desc="Main official web site.">https://folio.digital-nichan.com</ProfList>
           </Row>
           <Row>
             <ProfList type="twitter" desc="Main Twitter account.">@shotastage</ProfList>
