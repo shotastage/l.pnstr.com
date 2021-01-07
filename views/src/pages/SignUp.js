@@ -99,7 +99,7 @@ class SignUp extends React.Component {
     return (
       <>
         <Navigation>
-          <NavBrand>2ooU!</NavBrand>
+          <NavBrand>Pnstr Link</NavBrand>
         </Navigation>
         <Container>
           <Row>

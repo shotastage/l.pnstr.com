@@ -15,10 +15,6 @@ import { withTranslation } from 'react-i18next';
 import { APIClient } from './services/APIClient';
 import { Validator, ValidationType } from './services/Validator';
 
-// 2oo deprecation warning
-import { Container, Row } from './components/Grid';
-import MigrationNotice from './AppComponent';
-
 
 class App extends React.Component {
 
