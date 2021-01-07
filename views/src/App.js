@@ -139,7 +139,7 @@ class App extends React.Component {
     return (
       <>
         <Navigation>
-          <NavBrand>DN Link Center</NavBrand>
+          <NavBrand>Pnstr Link</NavBrand>
           <NavArea>
             <NavItems>
               <NavLink to='/m/signin'>Signin</NavLink>
