@@ -42,7 +42,7 @@ func createToken(identification string, email string, sessionToken string) (stri
 		Admin:          true,
 		StandardClaims: jwt.StandardClaims{
 			ExpiresAt: time.Now().Add(time.Hour * 72).Unix(),
-			Issuer:    "https://link.digital-nichan.com/auth/login_jwt",
+			Issuer:    "https://l.pnstr.com/auth/login_jwt",
 		},
 	}
 

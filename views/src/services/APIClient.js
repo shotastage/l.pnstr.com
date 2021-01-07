@@ -45,7 +45,7 @@ export class APIClient extends React.Component {
             (hostName === "localhost" || hostName === "127.0.0.1") ?
                 "http://localhost:8080"
                 :
-                "https://link.digital-nichan.com"
+                "https://l.pnstr.com"
         );
     }
 } 
