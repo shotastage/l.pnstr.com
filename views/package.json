@@ -1,21 +1,21 @@
 {
-  "name": "lin9me",
+  "name": "pnstrlink",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.4.1",
-    "i18next": "^19.0.2",
-    "i18next-browser-languagedetector": "^4.0.1",
+    "bootstrap": "^4.5.3",
+    "i18next": "^19.8.4",
+    "i18next-browser-languagedetector": "^6.0.1",
     "i18next-xhr-backend": "^3.2.2",
     "normalize.css": "^8.0.1",
-    "react": "^16.12.0",
-    "react-bootstrap": "^1.0.0-beta.16",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
-    "react-i18next": "^11.2.7",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.3.0",
-    "styled-components": "^4.4.1",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^11.8.5",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.1",
+    "styled-components": "^5.2.1",
     "unstated-next": "^1.1.0"
   },
   "scripts": {
@@ -40,6 +40,6 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "4.14.1"
   }
 }
