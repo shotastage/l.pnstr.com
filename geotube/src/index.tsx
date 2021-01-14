@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
+import 'normalize.css';
 import './index.scss';
-import App from './App';
+import Router from './Router';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+     <Suspense fallback={(<div>Now loading...</div>)}>
+        <Router/>
+    </Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );

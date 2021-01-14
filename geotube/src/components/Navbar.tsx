@@ -4,6 +4,7 @@ import Styled from "styled-components";
 
 const Bar = Styled.nav`
     background: red;
+    height: 1em;
 `;
 
 const Brand = Styled.p`
