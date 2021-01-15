@@ -5,9 +5,13 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 
 class MapBox extends Component {
-    map: any;
-    container: any;
 
+    //
+    map: any;
+    
+    //
+    container: any;
+        
     componentDidMount() {
         this.map = new mapboxgl.Map({
             accessToken: "pk.eyJ1Ijoic2hvdGFzdGFnZSIsImEiOiJja2p4MnlvMmQwb3M0Mm5tcmlyZXcwZ2oyIn0.CnvFtxPckF5aB7eDH3JU1A",
@@ -17,15 +21,11 @@ class MapBox extends Component {
             zoom: 13,
         });
 
-        this.map.addControl(
-            new mapboxgl.NavigationControl({
-                visualizePitch: true,
-            })
-        );
+        this.map.addControl(new mapboxgl.NavigationControl());
     }
 
     render() {
-        return <div className={'map'} ref={(e) => (this.container = e)} style={{ height: document.body.clientHeight	+ 'px'}}/>;
+        return <div className={'map'} ref={(e) => (this.container = e)} style={{ width: '100vw', height: '100vh'}} />;
     }
 }
 
