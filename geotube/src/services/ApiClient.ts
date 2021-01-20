@@ -56,6 +56,7 @@ export class APIClient {
 } 
 
 
-export function AuthToken() {
+export const AuthToken = (): string => {
     return "Bearer " + localStorage.getItem(BearerTokenAccessor);
+
 }

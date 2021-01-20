@@ -1,18 +1,23 @@
 
-export interface GeoCoordinates {
-    latitude: number;
-    longitude: number;
-    altitude: number;
+export interface GeoCoordinate3D {
+    latitude: number | null;
+    longitude: number | null;
+    altitude: number | null;
+}
+
+export interface GeoCoordinate2D {
+    latitude: number | null;
+    longitude: number | null;
 }
 
 class LocationUtils {
 
-    current: GeoCoordinates;
+    current: GeoCoordinate2D | GeoCoordinate3D | null;
 
     private static _instance: LocationUtils;
 
     private constructor() {
-        if (!navigator.geolocation) {
+        if ('geolocation' in navigator) {
             throw new Error("Failed to initialize geolocation service. This problem might be in unsupported browser.")
         }
 
@@ -32,8 +37,23 @@ class LocationUtils {
         return this._instance;
     }
 
-    getCurrentLocation(): number {
-        let current = 0.0 // navigator.geolocation.getCurrentPosition();
+    getCurrentLocation = (): GeoCoordinate2D | GeoCoordinate3D | Error => {
+        let current: GeoCoordinate2D | GeoCoordinate3D = {
+            latitude: 0.0,
+            longitude: 0.0,
+            altitude: 0.0,
+        };
+
+        navigator.geolocation.getCurrentPosition((position) => {
+            current = {
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude,
+                altitude: position.coords.altitude,
+            };
+        }, (e) => {
+            
+            return null;
+        });
         return current;
     }
 
